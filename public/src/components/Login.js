@@ -1,9 +1,14 @@
-import React from 'react';
+import React,{Component} from 'react';
 
-function Login(){
-    return(
-        <h1>login page</h1>
-    )
+class Login extends Component{
+    constructor(){
+        super()
+    }
+    render(){
+        return(
+            <h1>login pages</h1>
+        )
+    }
 }
 
 
