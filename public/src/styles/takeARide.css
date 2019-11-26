@@ -5,9 +5,25 @@
     --background-color:#FFFFF;
 }
 
+.header{
+    display: flex;
+    margin: 25px 0;
+    /* justify-content: space-between; */
+}
+
+.menu-header{
+    display: inline;
+    justify-content: flex-start;
+}
 .menu{
     width: 35px;
     height: 5px;
     background-color: black;
     margin: 6px 0;
+}
+
+.title{
+    font-size: 48px;
+    margin: -14px 56px;
+    justify-content: flex-end;
 }
