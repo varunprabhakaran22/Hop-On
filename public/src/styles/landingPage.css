@@ -1,0 +1,48 @@
+:root{
+    --primary-color:#000000;
+    --secondary-color:#FFFFFF;
+    --primary-font:arial;
+    --background-color:#FFFFF;
+}
+
+.landing-page{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.landing{
+    border: 1px black solid;
+    background-color:var(--secondary-color);
+    height: 99vh;
+    width: 375px;
+}
+  
+.app-name {
+    color: var(--primary-color);
+    padding: 15px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.take-ride, .share-ride{
+    height: 105px;
+    font-size: 22px;
+    cursor: pointer;
+    margin:200px 40px 40px;
+    /* margin-top: 200px; */
+    width: 100px;
+}
+
+.take-ride{
+    color: var(--primary-color);   
+    background-color: var(--secondary-color);   
+    
+}
+
+.share-ride{
+    background-color: var(--primary-color);   
+    border: unset;
+    color: var(--secondary-color);   
+}
