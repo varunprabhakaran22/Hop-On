@@ -9,12 +9,19 @@ class TakeARide extends Component{
 
     render(){
         return(
-            <div className = "login-page">
-                <div className = "login" > 
+            <div className = "main">
+                <div className = "header" > 
+                    <div>
+                        <div className = "menu"> </div>  
+                        <div className = "menu"></div>
+                        <div className = "menu" ></div>
+                    </div>
                     <h1 className = "app-name"> Hop On </h1>
+                </div>
+
                     <input type="text" className = "pick-up" placeholder = "Pick up Location" />
                     <input type="text" className = "drop" placeholder = "Drop Location" />
-                </div>
+                
                 <div>
                     <input type = "button" className = " search-for-partner" value = "Search for Ride"/>
                 </div>
