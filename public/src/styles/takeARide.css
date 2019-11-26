@@ -5,6 +5,7 @@
     --background-color:#FFFFF;
 }
 
+
 .header{
     display: flex;
     margin: 25px 0;
@@ -19,11 +20,34 @@
     width: 35px;
     height: 5px;
     background-color: black;
-    margin: 6px 0;
+    margin: 6px 3px;
 }
 
 .title{
     font-size: 48px;
     margin: -14px 56px;
     justify-content: flex-end;
+}
+
+.search-area{
+    margin:40px opx;
+}
+
+.pick-up, .drop{
+    /* background-color: #fffdfddb; */
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.search-ride{
+    display: flex;
+    justify-content: center;
+    margin-top: 90%;
+}
+
+
+.search-for-partner{
+    width: 80%;
 }
