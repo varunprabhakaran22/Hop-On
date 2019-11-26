@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import "../styles/takeARide.css"
 
 
-class TakeARide extends Component{
+class Header extends Component{
     constructor(){
         super()
     }
@@ -20,3 +20,6 @@ class TakeARide extends Component{
         </div>
         )
     }
+}
+
+export default Header
