@@ -11,12 +11,14 @@ class TakeARide extends Component{
         return(
             <div className = "main">
                 <div className = "header" > 
-                    <div>
+                    <div className = "menu-header">
                         <div className = "menu"> </div>  
                         <div className = "menu"></div>
                         <div className = "menu" ></div>
                     </div>
-                    <h1 className = "app-name"> Hop On </h1>
+                    <div className = "title">
+                        Hop On 
+                    </div>
                 </div>
 
                     <input type="text" className = "pick-up" placeholder = "Pick up Location" />
