@@ -1,7 +1,9 @@
 import React,{Component} from 'react';
-import Header from "../components/Header"
-import SearchArea from "../components/SearchArea"
+import Header from "./Header"
+import SearchArea from "./SearchArea"
+import Footer from './Footer';
 import "../styles/takeARide.css"
+
 
 
 class TakeARide extends Component{
@@ -11,12 +13,10 @@ class TakeARide extends Component{
 
     render(){
         return(
-            <div className = "main">
+            <div>
                 <Header />
                 <SearchArea />
-                <div>
-                    <input type = "button" className = " search-for-partner" value = "Search for Ride"/>
-                </div>
+                <Footer />
             </div>
         )
     }
