@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import Header from "../components/Header"
 import "../styles/takeARide.css"
 
 
@@ -10,17 +11,7 @@ class TakeARide extends Component{
     render(){
         return(
             <div className = "main">
-                <div className = "header" > 
-                    <div className = "menu-header">
-                        <div className = "menu"> </div>  
-                        <div className = "menu"></div>
-                        <div className = "menu" ></div>
-                    </div>
-                    <div className = "title">
-                        Hop On 
-                    </div>
-                </div>
-
+                <Header />
                     <input type="text" className = "pick-up" placeholder = "Pick up Location" />
                     <input type="text" className = "drop" placeholder = "Drop Location" />
                 
