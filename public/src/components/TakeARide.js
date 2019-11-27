@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import Header from "./Header"
-// import SearchArea from "./SearchArea"
+import SearchArea from "./SearchArea"
 import Footer from './Footer';
 import "../styles/takeARide.css"
 
@@ -16,6 +16,7 @@ class TakeARide extends Component{
             destination:""
         }
         this.handelEvent =this.handelEvent.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     handelEvent(event){
@@ -24,13 +25,20 @@ class TakeARide extends Component{
             [name]: value
         })
     }
+
+    async handleSubmit(){
+        const { userName,mobileNum,source,destination } = this.state
+        await axios.post("",{})
+        .then(() =>)
+    }
+
     render(){
         return(
             <div>
                 <Header />
-                {/* <SearchArea /> */}
-                <div>
-                    <div className = "profile">
+                <SearchArea state={this.state} handleChange={this.handelEvent}/>
+                {/* <div> */}
+                    {/* <div className = "profile">
                         <input type = "text"  
                             className="user-name" 
                             name="userName"   
@@ -46,7 +54,7 @@ class TakeARide extends Component{
                             onChange = {this.handelEvent} 
                         />
                     </div>
-    {/* <h1> {this.state.userName } {this.state.mobileNum}</h1> */}
+    <h1> {this.state.userName } {this.state.mobileNum}</h1>
                     <div className = "search-area">
                         <input type="text" 
                             className = "pick-up" 
@@ -63,9 +71,9 @@ class TakeARide extends Component{
                             onChange = {this.handelEvent}
                         />
                     </div>
-                    {/* <h1> {this.state.source } {this.state.destination}</h1> */}
-                </div>
-                <Footer />
+                    <h1> {this.state.source } {this.state.destination}</h1>
+                </div> */}
+                <Footer submitHandler={this.handleSubmit}/>
             </div>
         )
     }
