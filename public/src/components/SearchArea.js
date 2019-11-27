@@ -8,9 +8,15 @@ class SearchArea extends Component{
     }
     render(){
         return(
-            <div className = "search-area">
-                <input type="text" className = "pick-up" placeholder = "Pick up Location" />
-                <input type="text" className = "drop" placeholder = "Drop Location" />
+            <div>
+                <div className = "profile">
+                    <input type = "text"  className="user-name" placeholder = "Name" ></input>
+                    <input type ="text"  className = "mobile-no" placeholder = "Mobile number" ></input>
+                </div>
+                <div className = "search-area">
+                    <input type="text" className = "pick-up" placeholder = "Pick up Location" />
+                    <input type="text" className = "drop" placeholder = "Drop Location" />
+                </div>
             </div>
         )
     }
