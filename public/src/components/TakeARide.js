@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import Header from "./Header"
-import SearchAreaForTakeARide from "./SearchAreaForTakeARide"
+import SearchForTakeARide from "./SearchForTakeARide"
 import Footer from './Footer';
 import axios from "axios"
 import "../styles/takeARide.css"
@@ -14,17 +14,16 @@ class TakeARide extends Component{
             source:"",
             destination:""
         }
-        this.handleChange =this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-    handleChange(event){
+    handleChange = (event) => {
         const {name, value} = event.target
         this.setState({
             [name]: value
         })
     }
-
+ 
     async handleSubmit(){
         const { userName,mobileNum,source,destination } = this.state
         const data = this.state
@@ -38,7 +37,7 @@ class TakeARide extends Component{
         return(
             <div>
                 <Header />
-                <SearchAreaForTakeARide state={this.state} handleChange={this.handleChange}/>
+                <SearchForTakeARide state={this.state} handleChange={this.handleChange}/>
                 <Footer submitHandler={this.handleSubmit}/>
             </div>
         )

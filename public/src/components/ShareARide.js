@@ -29,12 +29,12 @@ class ShareARide extends Component{
  
     async handleSubmit(){
         const data = this.state
-        console.log(userName+ "" + mobileNum + "" + "" + carName + "" + carNum + "" + vacantSpace + "" +source + "" +destination);
+        console.log(this.state.userName+ "" + this.state.mobileNum + "" + "" + this.state.carName + "" + this.state.carNum + "" + this.state.vacantSpace + "" +this.state.source + "" +this.state.destination);
         await axios.post("http://localhost:8000/share/aRide",data)
         .then(() =>console.log("axios"))
         .catch((err) => console.log(err))
     }
-
+ 
     render(){
         return(
             <div>
