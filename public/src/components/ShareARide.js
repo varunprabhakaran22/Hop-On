@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import Header from "./Header"
 import SearchForShareARide from "./SearchForShareARide";
 import Search from './Search';
+import Footer from './Footer'
 import axios from "axios"
 import "../styles/takeARide.css"
 
@@ -37,10 +38,11 @@ class ShareARide extends Component{
  
     render(){
         return(
-            <div>
+            <div className ="main">
                 <Header />
                 <SearchForShareARide state={this.state} handleChange={this.handleChange}/>
                 <Search submitHandler={this.handleSubmit}/>
+                <Footer />
             </div>
         )
     }

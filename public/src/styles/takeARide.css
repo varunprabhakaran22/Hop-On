@@ -12,6 +12,12 @@
     /* justify-content: space-between; */
 }
 
+/* .main{
+    width: 376px;
+    height: 99vh;
+    background-color: crimson;
+} */
+
 .menu-header{
     display: inline;
     justify-content: flex-start;
@@ -47,7 +53,12 @@
     margin-top: 70%;
 }
 
-
 .search-for-partner{
     width: 80%;
+}
+
+.footer{
+    margin-top: 95%;
+    display: flex;
+    justify-content: center;
 }
