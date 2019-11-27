@@ -24,6 +24,27 @@ class SearchForShareARide extends Component{
                         placeholder = "Mobile number" 
                         onChange = {event => this.props.handleChange(event)} 
                     />
+                    <input type ="text"  
+                        className = "car-name" 
+                        name = "carName"  
+                        value={this.props.state.carName} 
+                        placeholder = "Car Name" 
+                        onChange = {event => this.props.handleChange(event)} 
+                    />
+                    <input type ="text"  
+                        className = "car-number" 
+                        name = "carNum"  
+                        value={this.props.state.carNum} 
+                        placeholder = "Car number" 
+                        onChange = {event => this.props.handleChange(event)} 
+                    />
+                    <input type ="text"  
+                        className = "vacant-space" 
+                        name = "vacantSpace"  
+                        value={this.props.state.vacantSpace} 
+                        placeholder = "Seat Left" 
+                        onChange = {event => this.props.handleChange(event)} 
+                    />
                 </div>
                 <div className = "search-area">
                     <input type="text" 
