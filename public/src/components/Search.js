@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import "../styles/takeARide.css"
 
 
-class Footer extends Component{
+class Search extends Component{
     constructor(){
         super()
     }
@@ -15,4 +15,4 @@ class Footer extends Component{
     }
 }
 
-export default Footer
+export default Search

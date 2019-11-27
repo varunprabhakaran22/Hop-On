@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import Header from "./Header"
 import SearchForShareARide from "./SearchForShareARide";
-import Footer from './Footer';
+import Search from './Search';
 import axios from "axios"
 import "../styles/takeARide.css"
 
@@ -27,10 +27,10 @@ class ShareARide extends Component{
         })
     }
  
-    async handleSubmit(){
+    handleSubmit(){
         const data = this.state
         console.log(this.state.userName+ "" + this.state.mobileNum + "" + "" + this.state.carName + "" + this.state.carNum + "" + this.state.vacantSpace + "" +this.state.source + "" +this.state.destination);
-        await axios.post("http://localhost:8000/share/aRide",data)
+        axios.post("http://localhost:8000/share/aRide",data)
         .then(() =>console.log("axios"))
         .catch((err) => console.log(err))
     }
@@ -40,7 +40,7 @@ class ShareARide extends Component{
             <div>
                 <Header />
                 <SearchForShareARide state={this.state} handleChange={this.handleChange}/>
-                <Footer submitHandler={this.handleSubmit}/>
+                <Search submitHandler={this.handleSubmit}/>
             </div>
         )
     }

@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import Header from "./Header"
 import SearchForTakeARide from "./SearchForTakeARide"
-import Footer from './Footer';
+import Search from './Search';
 import axios from "axios"
 import "../styles/takeARide.css"
 
@@ -38,7 +38,7 @@ class TakeARide extends Component{
             <div>
                 <Header />
                 <SearchForTakeARide state={this.state} handleChange={this.handleChange}/>
-                <Footer submitHandler={this.handleSubmit}/>
+                <Search submitHandler={this.handleSubmit}/>
             </div>
         )
     }
