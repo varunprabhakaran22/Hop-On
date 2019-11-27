@@ -11,7 +11,7 @@ class LandingPage extends Component{
                 <div className = "landing" > 
                     <h1 className = "app-name"> Hop On </h1>
                     <button type="button" className = "take-ride" onClick={()=>this.props.history.push("/takearide")}>Take a <br />Ride</button>
-                    <button type="button" className = "share-ride" >Share a <br />Ride</button>
+                    <button type="button" className = "share-ride" onClick = {() => this.props.history.push("/sharearide")} >Share a <br />Ride</button>
                 </div>
             </div>
         )
