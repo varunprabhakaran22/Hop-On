@@ -9,6 +9,12 @@ import "../styles/takeARide.css"
 class TakeARide extends Component{
     constructor(){
         super()
+        this.state ={
+            userName: "",
+            mobileNum:"",
+            source:"",
+            destination:""
+        }
     }
 
     render(){
