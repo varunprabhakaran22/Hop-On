@@ -33,7 +33,7 @@
     margin:40px opx;
 }
 
-.pick-up, .drop{
+.pick-up, .drop, .mobile-no, .user-name{
     /* background-color: #fffdfddb; */
     display: block;
     margin: auto;
@@ -44,7 +44,7 @@
 .search-ride{
     display: flex;
     justify-content: center;
-    margin-top: 90%;
+    margin-top: 80%;
 }
 
 
