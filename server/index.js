@@ -27,6 +27,11 @@ app.post("/takeride", (req, res) => {
     console.log(req.body); 
 })
 
+app.post("/share/aride",(req,res)=>{
+    console.log(req.body);
+    
+})
+
 
 app.listen(port, () => {
     console.log('Server is ready');
