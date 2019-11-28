@@ -14,7 +14,11 @@ firebase.initializeApp({
 })
   
 class Login extends Component {
-  state = { isSignedIn: false }
+  state = { 
+    isSignedIn: false,
+    userName :"",
+    userEmail: "",
+  }
   uiConfig = {
     signInFlow: "popup",
     signInOptions: [
@@ -42,13 +46,17 @@ class Login extends Component {
         {this.state.isSignedIn ? (
           <span>
             <div>Signed In!</div>
-            < LandingPage />
-            {/* <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
-            <h1>Welcome {firebase.auth().currentUser.displayName}</h1>
+            {this.state.userName = firebase.auth().currentUser.displayName}
+            <h1> {this.state.userName}</h1>
+            {/* < LandingPage /> */}
+
+            <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
+
+            {/* <h1>Welcome {firebase.auth().currentUser.displayName}</h1>
             <img
               alt="profile picture"
               src={firebase.auth().currentUser.photoURL}
-            /> */}
+            />  */}
           </span>
           ) : 
           (
