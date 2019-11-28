@@ -6,9 +6,13 @@ import axios from "axios";
 
 function PostToServer (props){
     console.log(props.userDetails);
-    axios.post("http://localhost:8000/user/auth",props.userDetails)
+    const userdata = {}
+    userdata .email = props.userDetails.email 
+    userdata .name  = props.userDetails.displayName
+    axios.post("http://localhost:8000/user/auth",userdata)
     .then(() =>console.log("axios"))
     .catch((err) => console.log(err))
+    
     return(null) 
 }
 
