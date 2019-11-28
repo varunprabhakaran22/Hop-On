@@ -13,9 +13,10 @@ class Menu extends Component{
         console.log(this.props.userDetails)
         return(
             <div>
-                <h1> Menu Printing</h1>
+                <h1> Menu</h1>
+                {this.props.userDetails.displayName}
                 <h3>
-                <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
+                    <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
                 </h3>
             </div>
         )
