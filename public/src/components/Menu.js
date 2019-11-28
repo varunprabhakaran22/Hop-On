@@ -6,9 +6,13 @@ class Menu extends Component{
         super()
     }
     render(){
+        console.log(this.props.userDetails)
         return(
-            <div className = "landing-page">
-                <h1> Menu</h1>
+            <div>
+                <h1> Menu Printing</h1>
+                <h3>
+                  d
+                </h3>
             </div>
         )
     }
