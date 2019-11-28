@@ -11,16 +11,21 @@ import Login from './components/Login';
 class App extends Component {
   constructor(){
     super()
+    this.state ={
+      isSignedIn:""
+    }
   }
 
   render(){
     return (
+      <div>
         <Switch>
-          <Route exact path="/" component={Login}/>
+          <Route exact path="/" component={Login }/>
           <Route exact path="/homepage" component={LandingPage}/>
           <Route exact path="/takearide" component={TakeARide}/>
           <Route exact path="/sharearide" component = {ShareARide} />
         </Switch>
+      </div>   
     )
   }
 }
