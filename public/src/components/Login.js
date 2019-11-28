@@ -5,18 +5,18 @@ import cors from "cors";
 import firebase from "firebase"
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 import LandingPage from './LandingPage';
-
-
+import Menu from "./Menu";
 
 firebase.initializeApp({
   apiKey: "AIzaSyDxf4pvmS6Zpjv3Wof0SdVJajuVa95pA1k",
   authDomain: "hop-on-6b5d5.firebaseapp.com"
 })
-  
+
+
 class Login extends Component {
   state = { 
     isSignedIn: false,
-    userName :"",
+    userDetails :{},
     userEmail: "",
   }
   uiConfig = {
@@ -35,29 +35,35 @@ class Login extends Component {
   
   componentDidMount = () => {
     firebase.auth().onAuthStateChanged(user => {
-      this.setState({ isSignedIn: !!user })
-      console.log("user", user)
-    })
+      this.setState({ isSignedIn: !!user,userDetails:user})
+      //  this.state.userName = firebase.auth().currentUser.displayName;
+      //  this.state.userEmail = firebase.auth().currentUser.email;
+      //  this.state.userName = firebase.auth().currentUser.displayName;
+
+    }) 
+ 
+      //  this.state.userName = firebase.auth().currentUser.displayName;
+      //  this.state.userEmail = firebase.auth().currentUser.email;
+      //  this.state.userName = firebase.auth().currentUser.displayName;
+
   }
-  
+
+ 
+
+
+
   render() {
+
+     const { isSignedIn,userName } =this.state
+     
     return (
       <div className="App">
-        {this.state.isSignedIn ? (
-          <span>
-            <div>Signed In!</div>
-            {this.state.userName = firebase.auth().currentUser.displayName}
-            <h1> {this.state.userName}</h1>
-            {/* < LandingPage /> */}
-
+            { isSignedIn?(
+              <div>
+            < Menu  userDetails = { userName } />
             <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
+            </div>
 
-            {/* <h1>Welcome {firebase.auth().currentUser.displayName}</h1>
-            <img
-              alt="profile picture"
-              src={firebase.auth().currentUser.photoURL}
-            />  */}
-          </span>
           ) : 
           (
             <StyledFirebaseAuth
