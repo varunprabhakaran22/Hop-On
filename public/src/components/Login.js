@@ -39,7 +39,7 @@ class Login extends Component {
       this.setState({ isSignedIn: !!user,userDetails:user})
     }) 
   }
-
+  
   render() {
     const { isSignedIn,userDetails } =this.state
     return (
