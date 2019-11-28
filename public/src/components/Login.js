@@ -44,10 +44,10 @@ class Login extends Component {
      
     return (
       <div className="App">
-        { isSignedIn?(
+        { isSignedIn ? (
           <div>
-            < Menu  userDetails = { userDetails } />
-            <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
+            {/* < Menu  userDetails = { userDetails } /> */}
+            <LandingPage />
           </div>
           ) : 
           (
