@@ -36,34 +36,19 @@ class Login extends Component {
   componentDidMount = () => {
     firebase.auth().onAuthStateChanged(user => {
       this.setState({ isSignedIn: !!user,userDetails:user})
-      //  this.state.userName = firebase.auth().currentUser.displayName;
-      //  this.state.userEmail = firebase.auth().currentUser.email;
-      //  this.state.userName = firebase.auth().currentUser.displayName;
-
     }) 
- 
-      //  this.state.userName = firebase.auth().currentUser.displayName;
-      //  this.state.userEmail = firebase.auth().currentUser.email;
-      //  this.state.userName = firebase.auth().currentUser.displayName;
-
   }
 
- 
-
-
-
   render() {
-
-     const { isSignedIn,userName } =this.state
+    const { isSignedIn,userDetails } =this.state
      
     return (
       <div className="App">
-            { isSignedIn?(
-              <div>
-            < Menu  userDetails = { userName } />
+        { isSignedIn?(
+          <div>
+            < Menu  userDetails = { userDetails } />
             <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
-            </div>
-
+          </div>
           ) : 
           (
             <StyledFirebaseAuth
