@@ -4,6 +4,7 @@ import { GoogleLogin } from 'react-google-login';
 import cors from "cors";
 import firebase from "firebase"
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
+import LandingPage from './LandingPage';
 
 
 
@@ -41,12 +42,13 @@ class Login extends Component {
         {this.state.isSignedIn ? (
           <span>
             <div>Signed In!</div>
-            <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
+            < LandingPage />
+            {/* <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
             <h1>Welcome {firebase.auth().currentUser.displayName}</h1>
             <img
               alt="profile picture"
               src={firebase.auth().currentUser.photoURL}
-            />
+            /> */}
           </span>
           ) : 
           (
