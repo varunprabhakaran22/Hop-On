@@ -9,7 +9,7 @@ function PostToServer (props){
     axios.post("http://localhost:8000/user/auth",props.userDetails)
     .then(() =>console.log("axios"))
     .catch((err) => console.log(err))
-    return(null)
+    return(null) 
 }
 
 
