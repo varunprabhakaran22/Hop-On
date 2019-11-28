@@ -32,7 +32,7 @@ app.post("/share/aride",(req,res)=>{
     
 })
 
-app.post("/user/auth",(req,res)=>{
+app.post("/user/auth",(req,res)=>{ 
     console.log(req.body);
     
 })
