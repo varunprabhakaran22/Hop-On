@@ -6,6 +6,7 @@ import firebase from "firebase"
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 import LandingPage from './LandingPage';
 import Menu from "./Menu";
+import PostToServer from "./PostToServer";
 
 firebase.initializeApp({
   apiKey: "AIzaSyDxf4pvmS6Zpjv3Wof0SdVJajuVa95pA1k",
@@ -41,12 +42,12 @@ class Login extends Component {
 
   render() {
     const { isSignedIn,userDetails } =this.state
-     
     return (
       <div className="App">
         { isSignedIn ? (
           <div>
-            {/* < Menu  userDetails = { userDetails } /> */}
+            < Menu  userDetails = { userDetails } />
+            <PostToServer userDetails = { userDetails} />
             <LandingPage />
           </div>
           ) : 
