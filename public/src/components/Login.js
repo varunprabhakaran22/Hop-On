@@ -48,7 +48,7 @@ class Login extends Component {
           <div>
             < Menu  userDetails = { userDetails } />
             <PostToServer userDetails = { userDetails} />
-            <LandingPage />
+            <LandingPage state = {this.state.isSignedIn}/>
           </div>
           ) : 
           (
