@@ -6,6 +6,9 @@ import { Route,Switch,Redirect } from 'react-router-dom'
 import ShareARide from './components/ShareARide';
 import Login from './components/Login';
 
+import Homepage from "./component/Homepage"
+import SearchComponent from "./component/SearchComponent"
+
 
 
 class App extends Component {
@@ -18,14 +21,19 @@ class App extends Component {
 
   render(){
     return (
+      // <div>
+      //   <Switch>
+      //     <Route exact path="/" component={Login }/>
+      //     <Route exact path="/homepage" component={LandingPage}/>
+      //     <Route exact path="/takearide" component={TakeARide}/>
+      //     <Route exact path="/sharearide" component = {ShareARide} />
+      //   </Switch>
+      // </div>
+      
       <div>
-        <Switch>
-          <Route exact path="/" component={Login }/>
-          <Route exact path="/homepage" component={LandingPage}/>
-          <Route exact path="/takearide" component={TakeARide}/>
-          <Route exact path="/sharearide" component = {ShareARide} />
-        </Switch>
-      </div>   
+        {/* <Homepage /> */}
+        <SearchComponent />
+      </div>
     )
   }
 }
