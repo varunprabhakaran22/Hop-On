@@ -29,3 +29,22 @@ class RideResult extends Component{
                             </div>
                         </div>
                     </div>
+                    <div className="p3000">
+                        <div className="flexResponsive768">
+                            <div className="flex1">
+                                <img src="profile.jpeg" className="rcImg" />
+                            </div>
+                            <div className="flexCent2"></div>
+                            <div className="flex7 flex flexJustifyBetween flexAlignItemsCenter">
+                                <div className="rcLabel">Arvind</div>
+                                <a href="" className="rcLink">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+export default RideResult
