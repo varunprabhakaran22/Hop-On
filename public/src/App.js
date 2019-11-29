@@ -6,8 +6,8 @@ import { Route,Switch,Redirect } from 'react-router-dom'
 import ShareARide from './components/ShareARide';
 import Login from './components/Login';
 import Homepage from "./component/Homepage"
-import SearchComponent from "./component/SearchComponent"
-
+import FindRide from "./component/FindRide"
+import ShareRide from "./component/ShareRide"
 
 class App extends Component {
   constructor(){
@@ -22,8 +22,9 @@ class App extends Component {
       <div>
         <Switch>
           <Route exact path="/" component={Homepage }/>  
-          <Route exact path="/find/a/ride" component={TakeARide }/>
-          <Route exact path="/search/a/ride" component={ShareARide}/>
+          <Route exact path="/find/a/ride" component={FindRide }/>
+          <Route exact path="/search/a/ride" component={ShareRide}/>
+          {/* <Route exact path="/result" component={ShareRide}/> */}
         </Switch>
         {/* <SearchComponent /> */}
       </div>
