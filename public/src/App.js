@@ -10,7 +10,6 @@ import Homepage from "./component/Homepage"
 import SearchComponent from "./component/SearchComponent"
 
 
-
 class App extends Component {
   constructor(){
     super()
@@ -31,11 +30,16 @@ class App extends Component {
       // </div>
       
       <div>
-        {/* <Homepage /> */}
-        <SearchComponent />
+        <Switch>
+          <Route exact path="/" component={Homepage }/>  
+          <Route exact path="/find/a/ride" component={TakeARide }/>
+          <Route exact path="/search/a/ride" component={ShareARide}/>
+        </Switch>
+        {/* <SearchComponent /> */}
       </div>
     )
   }
 }
+
 
 export default App;
