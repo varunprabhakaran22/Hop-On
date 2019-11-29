@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import "../styles/header.css"
-import { withRouter } from 'react-router-dom'
+import { withRouter , Link } from 'react-router-dom'
 import firebase from "firebase"
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 
@@ -22,7 +22,7 @@ class SearchComponent extends Component{
                             <input type="text" className="frmField" placeholder="Going to" />
                             <input type="datetime-local" name="date" />
                             <div className="textCenter">
-                                <input type="submit" className="frmBtn" value="Find a Ride" />
+                                <Link to='/find/a/ride' className="frmBtn" >Find a ride </Link>
                             </div>
                         </form>
                     </div>
