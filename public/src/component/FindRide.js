@@ -24,15 +24,16 @@ class FindRide extends Component{
         })
     }
 
-        async handleSubmit()  {
+    handleSubmit()  {    
         console.log("executing");
         const {source, destination ,datetime} = this.state
         const data = this.state
         console.log(source + "" +destination +  "" + datetime);
-        await axios.post("http://localhost:8000/takeride",data)
+        axios.post("http://localhost:8000/takeride",data)
         .then(() =>console.log("axios"))
         .catch((err) => console.log(err))
-        this.props.history.push("/")
+        this.props.history.push("/ride/result")
+
     }
 
     render(){
@@ -68,7 +69,15 @@ class FindRide extends Component{
                             />
 
                             <div className="textCenter">
-                                <button type="button" className = "frmBtn"  onClick = {this.handleSubmit}> find a ride</button>
+                                {(((this.state.source) &&(this.state.destination) != "" )) ?(
+                                    <button type="button" className = "frmBtn"  onClick = {this.handleSubmit}> find a ride</button>
+                                ):
+                                (
+                                    <button type="button" className = "frmBtn" 
+                                        disabled={((!this.state.source) && (!this.state.destination))}> find a ride
+                                    </button>
+                                )}
+
                             </div>
                         </form>
                     </div>
