@@ -18,6 +18,17 @@ class Header extends Component{
                             <div class="topLogo anchor">
                                 <h1> <Link to='/'>Hop On</Link></h1>
                             </div>
+                            <div class="menuSide flex flexJustifyEnd flexAlignItemsCenter">
+                                <div class="headerMenu flex flexJustifyEnd flexAlignItemsCenter">
+                                    <div className = "hmItem">  <Link to='/find/a/ride'>Find a ride </Link> </div>
+                                    <div className = "hmItem">   <Link to='/search/a/ride'> Offer a ride</Link> </div>
+                                    <div > <button type = "button "  className = "hmItem " > SignIn</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
         )
     }
 }
