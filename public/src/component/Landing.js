@@ -9,6 +9,20 @@ class Landing extends Component{
         super()
     }
     render(){
+        return(
+            <div>
+                <div class="heroBanner">
+                    <img src="/banner.jpg" class="hbImg" />
+                    <div class="hbBtnSec">
+                    <a href="#" class="hbBtn">Find a ride</a>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+}
+
+
 
 export default Landing
 
