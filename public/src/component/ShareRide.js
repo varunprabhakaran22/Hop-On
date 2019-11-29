@@ -75,7 +75,15 @@ class ShareRide extends Component{
 
                             <input type="datetime-local" name="date" />
                             <div className="textCenter">
-                                <button type="button" className = "frmBtn"  onClick = {this.handleSubmit}> share a ride</button>
+                                {(((this.state.source) &&(this.state.destination) != "" )) ?(
+                                        <button type="button" className = "frmBtn"  onClick = {this.handleSubmit}> Share a ride</button>
+                                    ):
+                                    (
+                                        <button type="button" className = "frmBtn" 
+                                            disabled={((!this.state.source) && (!this.state.destination))}> Share a ride
+                                        </button>
+                                    )
+                                }
                             </div>
                         </form>
                     </div>
