@@ -3,7 +3,7 @@ import "../styles/header.css"
 import { withRouter , Link } from 'react-router-dom'
 import firebase from "firebase"
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
-
+import Header from "./Header"
 
 class SearchComponent extends Component{
     constructor(){
@@ -12,6 +12,7 @@ class SearchComponent extends Component{
     render(){
         return(
             <div>
+                <Header />
                 <div className="container700 autocenter p9000">
                     <div className="textCenter">
                         <h1>Find a ride</h1>
