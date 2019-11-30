@@ -67,7 +67,7 @@ class ShareRide extends Component{
                             <br />
                             <input type="text" 
                                 className="frmField" 
-                                placeholder="Stopovers"
+                                placeholder="Stopovers (optional) "
                                 name = "stopovers"  
                                 value={this.state.stopovers} 
                                 onChange = {event => this.handleChange(event)} 
