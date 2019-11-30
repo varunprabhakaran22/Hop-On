@@ -29,7 +29,7 @@ class FindRide extends Component{
         const {source, destination ,datetime} = this.state
         const data = this.state
         console.log(source + "" +destination +  "" + datetime);
-        axios.post("http://localhost:8000/takeride",data)
+        axios.post("http://localhost:8000/api/findride/userinfo",data)
         .then(() =>console.log("axios"))
         .catch((err) => console.log(err))
         this.props.history.push("/ride/result")
