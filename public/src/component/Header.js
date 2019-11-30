@@ -62,7 +62,7 @@ class Header extends Component{
                                     <div className = "hmItem">  <Link to='/search/a/ride'> Offer a ride</Link> </div>
                                     {/* <button type="button" className = "frmBtn"  onClick = {this.handleSubmit  }> SignIn </button> */}
                                     <div className = "hmItem">  <Link to='/login'> SignIn </Link> </div>
-                                    <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
+                                    <button  className = "hmItem myButton" onClick={() => firebase.auth().signOut()}>Sign out!</button>
 
 {/*                                     
                                     { (!this.state.isSignedIn)  ?
