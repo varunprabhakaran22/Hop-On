@@ -8,6 +8,7 @@ import Login from './components/Login';
 import Homepage from "./component/Homepage"
 import FindRide from "./component/FindRide"
 import ShareRide from "./component/ShareRide"
+import RideResult from "./component/RideResult"
 
 class App extends Component {
   constructor(){
@@ -24,6 +25,7 @@ class App extends Component {
           <Route exact path="/" component={Homepage }/>  
           <Route exact path="/find/a/ride" component={FindRide }/>
           <Route exact path="/search/a/ride" component={ShareRide}/>
+          <Route exact path="/ride/result" component={RideResult}/>
           {/* <Route exact path="/result" component={ShareRide}/> */}
         </Switch>
         {/* <SearchComponent /> */}
