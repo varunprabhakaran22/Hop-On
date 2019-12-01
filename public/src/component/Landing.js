@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 import "../styles/header.css"
 import { withRouter, Link } from 'react-router-dom'
-
 import logo from '../asset/banner.jpg'; 
 
 
