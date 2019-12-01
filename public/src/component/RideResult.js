@@ -44,7 +44,8 @@ class RideResult extends Component{
                                 </div>
                             </div>
                         </div>
-                    </div>                <div className="rideCard">
+                    </div>                
+                        <div className="rideCard">
                         <div className="flexResponsive768">
                             <div className="flex1">
                                 <div className="rcLabel">02:00</div>
