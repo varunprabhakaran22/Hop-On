@@ -3,7 +3,7 @@ import "../styles/takeARide.css";
 import { withRouter } from 'react-router-dom'
 import axios from "axios";
 
-
+//posting to the  server
 function PostToServer (props){
     console.log(props.userDetails);
     const userdata = {}
@@ -14,6 +14,7 @@ function PostToServer (props){
     .catch((err) => console.log(err))
     return(null) 
 }
+ 
 
 
 
