@@ -70,5 +70,3 @@ class Login extends Component {
 }
 
 export default withRouter(Login)
-
-// firebaseui::rememberedAccounts
