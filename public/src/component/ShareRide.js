@@ -48,7 +48,13 @@ class ShareRide extends Component{
                     <div className="">
                         <form className="form">
                             
-
+                         <input type="text" 
+                                className="frmField" 
+                                placeholder="Leaving from" 
+                                name = "source"  
+                                value={this.state.source} 
+                                onChange = {event => this.handleChange(event)}
+                            />
                             <input type="text"  
                                 className="frmField"    
                                 placeholder="Going to" 
