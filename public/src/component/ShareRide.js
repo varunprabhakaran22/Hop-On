@@ -31,7 +31,7 @@ class ShareRide extends Component{
         const {source, destination ,stopovers} = this.state
         const data = this.state
         console.log(source + "" +destination +  "" + stopovers);
-        await axios.post("http://localhost:8000/takeride",data)
+        await axios.post("http://localhost:8000/api/shareride/userdetails",data)
         .then(() =>console.log("axios"))
         .catch((err) => console.log(err))
         this.props.history.push("/")
