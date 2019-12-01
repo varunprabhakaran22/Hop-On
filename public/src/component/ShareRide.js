@@ -48,7 +48,7 @@ class ShareRide extends Component{
                     <div className="">
                         <form className="form">
                             
-                         <input type="text" 
+                            <input type="text" 
                                 className="frmField" 
                                 placeholder="Leaving from" 
                                 name = "source"  
