@@ -77,7 +77,6 @@ class FindRide extends Component{
                                         disabled={((!this.state.source) && (!this.state.destination))}> find a ride
                                         </button>
                                 )}
-
                             </div>
                         </form>
                     </div>
