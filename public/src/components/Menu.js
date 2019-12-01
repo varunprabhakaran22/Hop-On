@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import "../styles/takeARide.css";
 import { withRouter } from 'react-router-dom'
 import firebase from "firebase"
-import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
+
 
 
 class Menu extends Component{
