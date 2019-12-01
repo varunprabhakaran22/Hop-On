@@ -23,19 +23,17 @@ app.use(cors());
 //    
 // })
 
-app.post("/takeride", (req, res) => {
+app.post("api/findride/userinfo", (req, res) => {
     console.log(req.body); 
 })
 
-app.post("/share/aride",(req,res)=>{
-    console.log(req.body);
-    
+app.post("/api/shareride/userdetails",(req,res)=>{
+    console.log(req.body);  
 })
 
 app.post("/user/auth",(req,res)=>{ 
-    console.log(req.body);
-    
-})
+    console.log(req.body); 
+}) 
 
 
 app.listen(port, () => {
