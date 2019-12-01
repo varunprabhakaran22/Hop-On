@@ -25,7 +25,7 @@ app.use(cors());
 
 app.post("api/findride/userinfo", (req, res) => {
     console.log(req.body); 
-})
+}) 
 
 app.post("/api/shareride/userdetails",(req,res)=>{
     console.log(req.body);  
